@@ -1,0 +1,20 @@
+@import '../../marketplace.css';
+
+.userRatingContainer {
+    
+    & > svg {
+      margin-right: 5px;
+      @media (--viewportMediumMax) {
+        width: 18px;
+      }
+    }
+    & > svg:last-child {
+      margin-right: 0;
+    }
+  }
+  .filled {
+    fill: #8F2593;
+  }
+  .empty {
+    fill: #B2B2B2;
+  }

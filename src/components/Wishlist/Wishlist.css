@@ -1,0 +1,68 @@
+@import '../../marketplace.css';
+
+.headingContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deleteListHolder {
+  width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.025);
+    border-radius: 50%;
+    transition: .35s;
+  & svg {
+    width: 25px;
+  }
+  &:hover {
+    cursor: pointer;
+    background: rgba(255,0,0,.125);
+    & svg {
+      fill: white;
+    }
+  }
+}
+  .createListBtn {
+    @apply --marketplaceButtonStyles;
+    max-width: 268px;
+  }
+.wishlistsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 23px;
+  margin-top: 23px;
+  border-top: 1px solid lightgrey;
+}
+.wishlistItem {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 11px 13px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: var(--boxShadowButton);
+    transition: .35s;
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+}
+.wishlistInfo {
+  padding: 14px 17px;
+}
+.wishlistHeader,
+.wishlistTotal {
+  margin: 0;
+}
+.wishlistHeader {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wishlistTotal {
+  font-size: 16px;
+    opacity: .8;
+}

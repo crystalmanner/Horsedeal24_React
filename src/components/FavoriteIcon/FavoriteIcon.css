@@ -1,0 +1,16 @@
+.favoriteWrapper {
+    z-index: 5;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .35s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

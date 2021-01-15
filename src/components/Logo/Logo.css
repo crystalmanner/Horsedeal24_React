@@ -1,0 +1,12 @@
+@import '../../marketplace.css';
+
+.logoMobile {
+  & path {
+    fill: var(--marketplaceColor);
+  }
+  height: 40px;
+  @media (--viewportMiniSmallMax) {
+    height: 40px;
+    /* max-width: 178px; */
+  }
+}
